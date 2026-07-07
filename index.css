@@ -79,6 +79,7 @@ body{
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+    /* color: #000; */
 }
 .conteudo-esquerda{
     margin:70px 70px 70px 90px;
