@@ -556,7 +556,7 @@ body{
         margin-left: 0;
         font-size: 18px;
     }
-    .menu-bar{
+    /* .menu-bar{
         display: inline;
     }
     .menu-bar i{
@@ -568,13 +568,93 @@ body{
         gap: 10px;
         padding: 0;
         display: none;
-    }
+    } */
 
     .conversar button {
         margin: 10px 0;
         width: 100%;
         display: none;
     }
+
+
+
+      .menu-bar {
+    display: inline;
+    font-size: 22px;
+    cursor: pointer;
+    color: #004d40;
+    z-index: 1100;
+  }
+
+.navegacao-service nav {
+  position: fixed;
+  top: 0;
+  right: -250px;
+  width: 250px;
+  height: 100%;
+  background: rgb(48, 82, 235);
+  transition: right 0.3s ease;
+  z-index: 1000;
+  padding-top: 60px;
+  overflow-y: auto; /* garante que o conteúdo aparece */
+}
+
+.navegacao-service nav.active {
+  right: 0;
+}
+.navegacao-service nav.active ul {
+  display: flex;          /* força a exibição quando o nav está ativo */
+  flex-direction: column;
+  gap: 10px;
+    margin: 0;
+  padding: 0;
+}
+
+.navegacao-service nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex !important; 
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 10px;
+}
+
+.navegacao-service nav ul li {
+  width: 100%;
+}
+
+.navegacao-service nav ul li a {
+  color: #fff; /* branco para contraste */
+  text-decoration: none;
+  font-size: 18px;
+  display: block;
+  padding: 12px 20px;
+  width: 100%;
+}
+
+.navegacao-service nav ul li a:hover {
+  background: #00695c;
+  border-radius: 4px;
+}
+
+  /* Overlay para escurecer fundo */
+  .overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.1);
+    display: block;
+    z-index: 900;
+  }
+
+  .overlay.active {
+    display: block;
+  }
+
+
 
     .banner {
         flex-direction: column;
@@ -1181,7 +1261,7 @@ body{
         font-size: 18pt;
     }
 
-    .navegacao-service nav ul {
+    /* .navegacao-service nav ul {
         flex-direction: column;
         gap: 10px;
         padding: 0;
@@ -1191,7 +1271,81 @@ body{
         padding: 10px;
         background: #333;
         display: none;
-    }
+    } */
+
+    .menu-bar {
+    display: inline;
+    font-size: 22px;
+    cursor: pointer;
+    color: #000;
+    z-index: 1100;
+  }
+
+.navegacao-service nav {
+  position: fixed;
+  top: 0;
+  right: -250px;
+  width: 250px;
+  height: 100%;
+  background: rgb(48, 82, 235);
+  transition: right 0.3s ease;
+  z-index: 1000;
+  padding-top: 60px;
+  overflow-y: auto; /* garante que o conteúdo aparece */
+}
+
+.navegacao-service nav.active {
+  right: 0;
+}
+.navegacao-service nav.active ul {
+  display: flex;          /* força a exibição quando o nav está ativo */
+  flex-direction: column;
+  gap: 10px;
+}
+
+.navegacao-service nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex !important; 
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 10px;
+}
+
+.navegacao-service nav ul li {
+  width: 100%;
+}
+
+.navegacao-service nav ul li a {
+  color: #fff; 
+  text-decoration: none;
+  font-size: 18px;
+  display: block;
+  padding: 12px 12px;
+  width: 100%;
+}
+
+.navegacao-service nav ul li a:hover {
+  background: #000;
+  border-radius: 4px;
+}
+
+  /* Overlay para escurecer fundo */
+  .overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.1);
+    display: block;
+    z-index: 900;
+  }
+
+  .overlay.active {
+    display: block;
+  }
     
     .conversar button {
         margin: 10px 0;
