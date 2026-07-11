@@ -1149,8 +1149,8 @@ body{
 
     .titulo-criando-algo-juntos{
         border: 1px solid #000 hidden;
-        margin-left: 50px;
-        width: 100%;
+        margin-left: 40px;
+        width: 90%;
         margin-top: -10px;
     }
     .titulo-criando-algo-juntos h2{
@@ -1861,15 +1861,15 @@ body{
     .logo-criando-algo-juntos img{
         width: 190px;
         margin-bottom: 10px;
+        border: 1px solid #000 hidden;
         
     }
 
-    .logo-criando-algo-juntos{
-        border: 1px solid #000 hidden;
+    /* .logo-criando-algo-juntos{
         margin-right:40px;
         width: 80%;
         margin-bottom: 10px;
-    }
+    } */
 
     .logo-criando-algo-juntos h1{
         font-size: 25px;
@@ -1878,8 +1878,8 @@ body{
 
     .titulo-criando-algo-juntos{
         border: 1px solid #000 hidden;
-        margin-left: 50px;
-        width: 100%;
+        margin-left: 40px;
+        width: 90%;
         margin-top: -10px;
     }
     .titulo-criando-algo-juntos h2{
@@ -1896,7 +1896,7 @@ body{
         text-align: left;
         width: 100%;
         height: auto;
-        margin-left: 20px;
+        margin-left: 10px;
     }
 
     /* 
