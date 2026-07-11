@@ -25,10 +25,11 @@ body{
     z-index: 1000;
     box-shadow: 0 3px 15px rgba(0, 0, 0, 0.08);    
 }
-.logo-service{
-    font-size: 24px;
-    font-weight: bold;
-    margin-left: 70px;
+
+.logo-service img{
+    /* margin-top: 10px; */
+    margin-left: 70px hidden;
+    width: 350px;
 }
 .menu-bar{
     display: none;
@@ -42,6 +43,10 @@ body{
 .navegacao-service nav ul li{
     margin-left: 20px;
     padding: 12px 5px hidden;
+}
+.navegacao-service nav ul li i{
+    margin-right: 5px;
+    display: none;
 }
 .navegacao-service nav ul li a{
     color: #000;
@@ -350,18 +355,27 @@ body{
     .img-cards{
         width: 200px;
         margin: auto;
-        padding: 5px;
-        border: 4px dashed #000;
+        padding: 10px;
+        border: 3px dashed #000;
         height: 190px;
         border-radius: 100%;
         margin-bottom: 20px;
         transition: 2s ease;
+        display: flex;
+        justify-content: center;
+        align-items: center;
         /* clip-path: circle(100%); */
+    }
+    .carlos img{
+        object-position: center top;
+        object-fit: none;
     }
     .img-cards img{
         width: 180px;
         height: 170px;
-        border-radius: 100%;
+        object-fit: cover;
+        object-position: center;
+        border-radius: 50%;
     }
     .img-cards img:hover{
         opacity: 0.7;
@@ -449,29 +463,39 @@ body{
     }
     .criando-algo-juntos{
         width: 100%;
-        height: 240px;
+        height: auto;
         background: #eeeded;
         padding: 20px;
-        padding: 50px;
         
     }
     .conteudo-criando{
         width: 900px;
         display: flex;
-        margin: 40px auto;
-    }
-    .logo-criando-algo-juntos{
+        margin: auto;
+        align-items: center;
+        line-height: auto;
         border: 1px solid #000 hidden;
+    }
+    .logo-criando-algo-juntos img{
+        /* border: 1px solid #000 hidden;
         margin-right: 40px;
-        width: 40%;
+        width: 40%; */
+        width: 260px;
+        height: auto;
+        margin-right: 40px;
+        border: 1px solid #000 hidden;
     }
     .titulo-criando-algo-juntos{
         border: 1px solid #000 hidden;
         margin-right: 40px;
+        /* padding-top: 0px; */
         width: 80%;
     }
     .titulo-criando-algo-juntos h2{
         margin-bottom: 10px;
+        border: 1px solid #000 hidden;
+        width: 100%;
+        margin-right: 30px;
 
     }
     .botao-criando-contacto button{
@@ -528,10 +552,12 @@ body{
     .titulo-contacto h4{
         margin-bottom: 5px;
     }
-    .titulo-footer h1{
-        margin-bottom: 10px;
+    .titulo-footer img{
+        /* margin-bottom: 10px;
         border: 1px solid #000 hidden;
-        text-align: left;
+        text-align: left; */
+        width: 300px;
+        background: #000 hidden;
     }
     .titulo-footer p{
         width: 50%;
@@ -545,17 +571,18 @@ body{
 
 .cabecalho {
         /* flex-direction: column; */
-        height: auto;
+        height: 50px;
         padding: 10px;
         display: flex;
     }
     /* body{
         background: #f00;
     } */
-    .logo-service {
-        margin-left: 0;
-        font-size: 18px;
-    }
+    .logo-service img{
+    margin-top: 10px;
+    margin-left: 70px hidden;
+    width: 190px;
+}
     /* .menu-bar{
         display: inline;
     }
@@ -585,7 +612,11 @@ body{
     color: #004d40;
     z-index: 1100;
   }
-
+.navegacao-service nav ul li i{
+    border: 1px solid #000 hidden;
+    display: inline-block;
+    font-size: 22px;
+}
 .navegacao-service nav {
   position: fixed;
   top: 0;
@@ -606,7 +637,7 @@ body{
   display: flex;          /* força a exibição quando o nav está ativo */
   flex-direction: column;
   gap: 10px;
-    margin: 0;
+  margin: 0;
   padding: 0;
 }
 
@@ -629,6 +660,7 @@ body{
   text-decoration: none;
   font-size: 18px;
   display: block;
+  align-items: center;
   padding: 12px 20px;
   width: 100%;
 }
@@ -672,7 +704,7 @@ body{
         width: 90%;
     }
     .titulo-conteudo h1{
-        font-size: 30px;
+        font-size: 28px;
     }
     .paragrafo-conteudo{
         border: 1px solid #f00 hidden;
@@ -1087,14 +1119,20 @@ body{
         height: auto;
         background: #eeeded;
         background: #f00 hidden;
-        padding: 20px;
+        padding: 20px hidden;
         /* padding: 50px; */
         
     }
     .conteudo-criando{
         /* width: 900px; */
         display: flex;
-        margin:  0px;
+        align-items: center;
+    }
+
+    .logo-criando-algo-juntos img{
+        width: 190px;
+        margin-bottom: 10px;
+        
     }
 
     .logo-criando-algo-juntos{
@@ -1106,26 +1144,30 @@ body{
 
     .logo-criando-algo-juntos h1{
         font-size: 25px;
-        text-align: left;
+        text-align: center;
     }
 
     .titulo-criando-algo-juntos{
         border: 1px solid #000 hidden;
-        margin-right: 40px;
-        width: 90%;
+        margin-left: 50px;
+        width: 100%;
+        margin-top: -10px;
     }
     .titulo-criando-algo-juntos h2{
         margin-bottom: 10px;
         border: 1px solid #000 hidden;
         font-size: 20px;
         font-weight: bold;
-        text-align: left;
+        text-align: center;
 
     }
 
     .titulo-criando-algo-juntos p{
         border: 1px solid #008 hidden;
         text-align: left;
+        width: 100%;
+        height: auto;
+        margin-left: 20px;
     }
 
     /* 
@@ -1151,12 +1193,25 @@ body{
         transition: 0.3s ease;
     } */
 
+.botao-criando-contacto button{
+        margin-top: 15px;
+        width: 280px;
+        font-weight: bold;
+        height: 40px;
+        padding: 10px;
+        font-size: 15px;
+        color: #fff;
+        border-radius: 16px hidden;
+        border: 1px solid  #000;
+        background: rgb(48, 82, 235);
+        /* background: #f00; */
+        transition: 0.3s ease;
+    }
 
-
-    .botao-criando-contacto button {
+    /* .botao-criando-contacto button {
         width: 100%;
         margin-top: 15px;
-    }
+    } */
 
     /* footer {
         flex-direction: column;
@@ -1187,10 +1242,13 @@ body{
     padding-top: 20px;
     margin-top: 30px;
     }
-    .titulo-footer h1{
-        margin-bottom: 10px;
-        border: 10px solid #000 hidden;
-        text-align: left;
+    .titulo-footer img{
+        /* margin-bottom: 10px;
+        border: 1px solid #000 hidden;
+        text-align: left; */
+        width: 190px;
+        background: #000 hidden;
+        margin-right: 10px;
     }
     .listas-informacao-footer{
         margin-bottom: 10px;
@@ -1243,18 +1301,19 @@ body{
     
     .cabecalho {
         /* flex-direction: column; */
-        height: auto;
+        height: 50px;
         padding: 10px;
         display: flex;
     }
     /* body{
         background: #f00;
     } */
-    .logo-service {
-        margin-left: 0;
-        font-size: 18px;
-    }
-    .menu-bar{
+    .logo-service img{
+    margin-top: 10px;
+    margin-left: 70px hidden;
+    width: 190px;
+}    
+.menu-bar{
         display: inline;
     }
     .menu-bar i{
@@ -1292,6 +1351,12 @@ body{
   z-index: 1000;
   padding-top: 60px;
   overflow-y: auto; /* garante que o conteúdo aparece */
+}
+
+.navegacao-service nav ul li i{
+    border: 1px solid #000 hidden;
+    display: inline-block;
+    font-size: 22px;
 }
 
 .navegacao-service nav.active {
@@ -1369,7 +1434,7 @@ body{
         width: 90%;
     }
     .titulo-conteudo h1{
-        font-size: 30px;
+        font-size: 28px;
     }
     .paragrafo-conteudo{
         border: 1px solid #f00 hidden;
@@ -1783,14 +1848,20 @@ body{
         height: auto;
         background: #eeeded;
         background: #f00 hidden;
-        padding: 20px;
+        padding: 20px hidden;
         /* padding: 50px; */
         
     }
     .conteudo-criando{
         /* width: 900px; */
         display: flex;
-        margin:  0px;
+        align-items: center;
+    }
+
+    .logo-criando-algo-juntos img{
+        width: 190px;
+        margin-bottom: 10px;
+        
     }
 
     .logo-criando-algo-juntos{
@@ -1802,26 +1873,30 @@ body{
 
     .logo-criando-algo-juntos h1{
         font-size: 25px;
-        text-align: left;
+        text-align: center;
     }
 
     .titulo-criando-algo-juntos{
         border: 1px solid #000 hidden;
-        margin-right: 40px;
-        width: 90%;
+        margin-left: 50px;
+        width: 100%;
+        margin-top: -10px;
     }
     .titulo-criando-algo-juntos h2{
         margin-bottom: 10px;
         border: 1px solid #000 hidden;
         font-size: 20px;
         font-weight: bold;
-        text-align: left;
+        text-align: center;
 
     }
 
     .titulo-criando-algo-juntos p{
         border: 1px solid #008 hidden;
         text-align: left;
+        width: 100%;
+        height: auto;
+        margin-left: 20px;
     }
 
     /* 
@@ -1846,13 +1921,25 @@ body{
         background: rgb(48, 82, 235);
         transition: 0.3s ease;
     } */
+    .botao-criando-contacto button{
+        margin-top: 15px;
+        width: 280px;
+        font-weight: bold;
+        height: 40px;
+        padding: 10px;
+        font-size: 15px;
+        color: #fff;
+        border-radius: 16px hidden;
+        border: 1px solid  #000;
+        background: rgb(48, 82, 235);
+        transition: 0.3s ease;
+    }
 
-
-
+/* 
     .botao-criando-contacto button {
         width: 100%;
         margin-top: 15px;
-    }
+    } */
 
     /* footer {
         flex-direction: column;
@@ -1883,10 +1970,13 @@ body{
     padding-top: 20px;
     margin-top: 30px;
     }
-    .titulo-footer h1{
-        margin-bottom: 10px;
-        border: 10px solid #000 hidden;
-        text-align: left;
+    .titulo-footer img{
+        /* margin-bottom: 10px;
+        border: 1px solid #000 hidden;
+        text-align: left; */
+        width: 190px;
+        background: #000 hidden;
+        margin-right: 10px;
     }
     .listas-informacao-footer{
         margin-bottom: 10px;
@@ -1923,10 +2013,10 @@ body{
     z-index: 1000;
     box-shadow: 0 3px 15px rgba(0, 0, 0, 0.08);    
 }
-.logo-service{
-    font-size: 24px;
-    font-weight: bold;
-    margin-left: 70px;
+.logo-service img{
+    /* margin-top: 10px; */
+    margin-left: 70px hidden;
+    width: 400px;
 }
 .navegacao-service nav ul{
     display: flex;
@@ -2346,11 +2436,17 @@ body{
         width: 900px;
         display: flex;
         margin: 40px auto;
+        align-items: center;
+        line-height: auto;
     }
-    .logo-criando-algo-juntos{
-        border: 1px solid #000 hidden;
+    .logo-criando-algo-juntos img{
+        /* border: 1px solid #000 hidden;
         margin-right: 40px;
-        width: 40%;
+        width: 40%; */
+        width: 260px;
+        height: auto;
+        margin-right: 40px;
+        border: 1px solid #000 hidden;
     }
     .titulo-criando-algo-juntos{
         border: 1px solid #000 hidden;
@@ -2415,8 +2511,12 @@ body{
     .titulo-contacto h4{
         margin-bottom: 5px;
     }
-    .titulo-footer h1{
-        margin-bottom: 10px;
+    .titulo-footer img{
+        /* margin-bottom: 10px;
+        border: 1px solid #000 hidden;
+        text-align: left; */
+        width: 360px;
+        background: #000 hidden;
     }
     .titulo-footer p{
         width: 70%;
