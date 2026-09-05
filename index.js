@@ -16,3 +16,12 @@ overlay.addEventListener("click", () => {
   nav.classList.remove("active");
   overlay.classList.remove("active");
 });
+
+const icon=document.querySelector('.mudar_fundo')
+const body=document.querySelector('body')
+console.log(icon)
+console.log(body)
+
+icon.addEventListener('click', (evt)=>{
+  body.classList.toggle('fundo')
+})

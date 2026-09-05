@@ -34,6 +34,9 @@ body{
 .menu-bar{
     display: none;
 }
+.mudar_fundo{
+    display: none;
+}
 .navegacao-service nav ul{
     display: flex;
     list-style: none;
@@ -603,7 +606,13 @@ body{
         display: none;
     }
 
-
+    .mudar_fundo{
+    display: inline;
+    }
+    .menu-bar i{
+        font-size: 18pt;
+        color: #000;
+    }
 
       .menu-bar {
     display: inline;
@@ -686,6 +695,10 @@ body{
     display: block;
   }
 
+  .fundo {
+    background: #000 !important;
+    color: #fff !important;
+}
 
 
     .banner {
@@ -730,14 +743,16 @@ body{
     } */
 
     .banner2{
-        background: #fb2 hidden;
+        background: none;
         width: 100%;
         height: auto;
     }
 
     .conteudo-botao button{
         
-        width: 200px;
+        width: 100%;
+        font-weight: bold;
+        font-size: 12pt;
     }
 
     /* .conteiner-card, .conteudo-card2, .conteudo-sobre-nos-direita-cards {
@@ -840,7 +855,7 @@ body{
     } */
 
     .banner3{
-        background: #fb2 hidden;
+        background: none;
         width: 100%;
         height: auto;
         padding: 10px;
@@ -880,7 +895,7 @@ body{
     .sobre-nos{
         width: 100%;
         height: auto;
-        background: #eeeded;
+        /* background: #eeeded; */
         /* background: #fb2; */
         padding: 20px hidden;
         display: flex hidden;
@@ -1117,7 +1132,7 @@ body{
     .criando-algo-juntos{
         width: 100%;
         height: auto;
-        background: #eeeded;
+        /* background: #eeeded; */
         background: #f00 hidden;
         padding: 20px hidden;
         /* padding: 50px; */
@@ -1318,6 +1333,7 @@ body{
     }
     .menu-bar i{
         font-size: 18pt;
+        color: #000;
     }
 
     /* .navegacao-service nav ul {
@@ -1331,6 +1347,25 @@ body{
         background: #333;
         display: none;
     } */
+
+    .mudar_fundo{
+    display: inline;
+    }
+
+     /* .fundo {
+    background: #000 !important;
+    color: #fff !important;
+} */
+.fundo header,  
+.fundo footer{
+  background: #111 !important;
+  color: #fff !important;
+}
+.fundo a{
+    color: #fff !important;
+}
+
+
 
     .menu-bar {
     display: inline;
@@ -1460,14 +1495,16 @@ body{
     } */
 
     .banner2{
-        background: #fb2 hidden;
+        background: none;
         width: 100%;
         height: auto;
     }
 
     .conteudo-botao button{
         
-        width: 200px;
+         width: 100%;
+         font-weight: bold;
+         font-size: 12pt;
     }
 
     /* .conteiner-card, .conteudo-card2, .conteudo-sobre-nos-direita-cards {
@@ -1570,7 +1607,7 @@ body{
     } */
 
     .banner3{
-        background: #fb2 hidden;
+        background: none;
         width: 100%;
         height: auto;
         padding: 10px;
@@ -1610,7 +1647,7 @@ body{
     .sobre-nos{
         width: 100%;
         height: auto;
-        background: #eeeded;
+        background: none;
         /* background: #fb2; */
         padding: 20px hidden;
         display: flex hidden;
@@ -1782,7 +1819,7 @@ body{
     .nosso-processo{
         width: 100%;
         height: auto;
-        background: #f00 hidden;
+        background: none;
         padding: 20px;
     }
     .titulo-nosso-processo{
@@ -1846,8 +1883,8 @@ body{
     .criando-algo-juntos{
         width: 100%;
         height: auto;
-        background: #eeeded;
-        background: #f00 hidden;
+        /* background: #eeeded; */
+        background: none;
         padding: 20px hidden;
         /* padding: 50px; */
         
@@ -1969,6 +2006,7 @@ body{
     border-top: 1px solid #ccc;
     padding-top: 20px;
     margin-top: 30px;
+    color: #fff;
     }
     .titulo-footer img{
         /* margin-bottom: 10px;
